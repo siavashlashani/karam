@@ -1,0 +1,6 @@
+{
+  "name": "کارام",
+  "description": "اپلیکیشن مدیریت کارهای روزانه، روتین‌ها، داروها، پرداختی‌ها و نوبت‌ها با طراحی شاد و پاستلی",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

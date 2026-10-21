@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">کارام</string>
+    <string name="greeting_prefix">سلام، روزت قشنگ!</string>
+    <string name="search_placeholder">جستجو در کارها و روتین‌ها...</string>
+    <string name="tab_home">خانه</string>
+    <string name="tab_tasks">کارهای من</string>
+    <string name="tab_routines">روتین‌ها</string>
+    <string name="tab_categories">دسته‌بندی</string>
+    <string name="tab_stats">گزارش</string>
+    <string name="add_task">افزودن کار جدید</string>
+    <string name="edit_task">ویرایش کار</string>
+    <string name="delete_task">حذف کار</string>
+</resources>
