@@ -27,7 +27,14 @@ jobs:
       - name: Build debug APK
         run: |
           chmod +x gradlew
-          ./gradlew assembleDebug --no-daemon
+          set +e
+          ./gradlew assembleDebug --no-daemon --console=plain > build.log 2>&1
+          code=$?
+          if [ $code -ne 0 ]; then
+            grep -n -E "wrong|FAILURE|Caused|Could not|not found|error:|Error" build.log | head -10 | while IFS= read -r l; do echo "::error::${l:0:400}"; done
+            tail -n 10 build.log | while IFS= read -r l; do echo "::warning::${l:0:400}"; done
+          fi
+          exit $code
 
       - uses: actions/upload-artifact@v4
         with:
